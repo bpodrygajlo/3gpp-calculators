@@ -1,0 +1,32 @@
+<html>  
+<head>  
+<script type="text/javascript" src="../scripts/getpucchprbindex.js"></script>  
+<script type="text/javascript">
+function test_getpucchprbindex()
+{
+  try
+  {
+    nPrb = getPucchPrbIndex(0, 100, 0);
+    if (nPrb != 0)
+    {
+      alert("Invalid result: expected mPrb == 0, got " + nPrb.toString());
+    }
+    nPrb = getPucchPrbIndex(0, 100, 1);
+    if (nPrb != 99)
+    {
+      alert("Invalid result: expected nPrb == 99, got " + nPrb.toString());
+    }
+  }
+  catch (e)
+  {
+    alert("Caught exception" + e); 
+  }
+}
+</script
+</head> 
+<body> 
+<form>  
+<input type="button" value="click" onclick="test_getpucchprbindex()"/>  
+</form>  
+</body>  
+</html>  
