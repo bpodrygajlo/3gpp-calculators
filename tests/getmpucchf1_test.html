@@ -1,0 +1,27 @@
+<html>  
+<head>  
+<script type="text/javascript" src="../scripts/pucch.js"></script>  
+<script type="text/javascript">
+function test_getmpucchf1()
+{
+  try
+  {
+    mPucch = getMPucchF1(3, 0, 3, 2, 7);
+    if (mPucch != 2)
+    {
+      alert("Invalid result: expected mPucch == 2, got " + mPucch.toString());
+    }
+  }
+  catch (e)
+  {
+    alert("Caught exception" + e); 
+  }
+}
+</script
+</head> 
+<body> 
+<form>  
+<input type="button" value="click" onclick="test_getmpucchf1()"/>  
+</form>  
+</body>  
+</html>  
