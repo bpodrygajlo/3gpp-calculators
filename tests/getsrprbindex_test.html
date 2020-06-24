@@ -1,0 +1,27 @@
+<html>  
+<head>  
+<script type="text/javascript" src="../scripts/pucch.js"></script>  
+<script type="text/javascript">
+function test_getsrprbindex()
+{
+  try
+  {
+    nPrb = getSrPrbIndex(3, 0, 3, 2, 7, 100, 0);
+    if (nPrb != 1)
+    {
+      alert("Invalid result: expected nPrb == 1, got " + nPrb.toString());
+    }
+  }
+  catch (e)
+  {
+    alert("Caught exception" + e); 
+  }
+}
+</script
+</head> 
+<body> 
+<form>  
+<input type="button" value="click" onclick="test_getsrprbindex()"/>  
+</form>  
+</body>  
+</html>  
