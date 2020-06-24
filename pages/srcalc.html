@@ -14,14 +14,14 @@ table, td, th {
 function draw_sr_resources()
 {
   var c = parseInt(document.getElementById("c").value);
-  var srConfigIndex = parseInt(document.getElementById("srConfigIndex").value);
+  var srResourceIndex = parseInt(document.getElementById("srResourceIndex").value);
   var deltaPucchShift = parseInt(document.getElementById("deltaPucchShift").value);
   var nRBcqi = parseInt(document.getElementById("nRBcqi").value);
   var nCSan = parseInt(document.getElementById("nCSan").value);
   var nrOfPrbs = parseInt(document.getElementById("nrOfPrbs").value);
   
-  var nPrbEvenSlot = getSrPrbIndex(c, srConfigIndex, deltaPucchShift, nRBcqi, nCSan, nrOfPrbs, 0);
-  var nPrbOddSlot = getSrPrbIndex(c, srConfigIndex, deltaPucchShift, nRBcqi, nCSan, nrOfPrbs, 1);
+  var nPrbEvenSlot = getSrPrbIndex(c, srResourceIndex, deltaPucchShift, nRBcqi, nCSan, nrOfPrbs, 0);
+  var nPrbOddSlot = getSrPrbIndex(c, srResourceIndex, deltaPucchShift, nRBcqi, nCSan, nrOfPrbs, 1);
   
   document.getElementById("result").innerHTML += "PRB in even slot: " + nPrbEvenSlot.toString() + "<br> PRB in odd slot:" + nPrbOddSlot.toString() + "<br>";
 }
@@ -32,8 +32,8 @@ function draw_sr_resources()
 <form>  
   <label for="c">C</label><br>
   <input type="text" id="c" name="c" value="3"><br>
-  <label for="srConfigIndex">srConfigIndex</label><br>
-  <input type="text" id="srConfigIndex" name="srConfigIndex" value="0"><br>
+  <label for="srResourceIndex">srResourceIndex</label><br>
+  <input type="text" id="srResourceIndex" name="srResourceIndex" value="0"><br>
   <label for="deltaPucchShift">deltaPucchShift</label><br>
   <input type="text" id="deltaPucchShift" value="1"><br>
   <label for="nRBcqi">nRBcqi</label><br>
