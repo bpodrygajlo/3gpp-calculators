@@ -1,3 +1,5 @@
+var nRbSc = 12;
+
 function getMPucchF1(c, n1_PUCCH, deltaPucchShift, nRBcqi, nCSan)
 {
   if (c != 2 && c != 3)
