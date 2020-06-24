@@ -6,8 +6,8 @@ Can be found in /scripts/ directory
 
 ### Tests
 
-Manual tests available in /tests/ directory
+Manual tests in /tests/ directory
 
 ### Calculators
 
-Currently no calculator is available
+[LTE PUCCH SR PRB calculator](https://bpodrygajlo.github.io/3gpp-calculators/pages/srcalc)
